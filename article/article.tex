@@ -1,0 +1,46 @@
+\documentclass{article}
+
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+
+\begin{document}
+    \title{\textcolor{blue}{\textbf{Problema 3 }}\\}
+    \author{Daniel de la Cruz Prieto C211\\ David Orlando De Quesada Oliva C211\\Javier Dominguez C212} 
+    \date{}
+    \maketitle  
+
+    \section{Descripci\'on del problema} 
+
+    Sea $G = <V,E>$ un grafo no dirigido y conexo con pesos positivos en las aristas, y un v\'ertice $s \in V$ . Un \'arbol de 
+    caminos de costo m\'inimos con ra\'iz en s es un subgrafo $T = <V^{'} , E^{'}> $ donde $V^{'} \subseteq  V $     y $E^{'} \subseteq  E $ tal que: 
+    
+    \begin{itemize}
+        \item $V^{'}$ es el conjunto de v\'ertices alcanzables desde s en $G$
+        \item $T$ es un \'arbol con ra\'iz en $s$
+        \item Para todo $v \in V^{'}$ el \'unico camino simple de $s$ a $v$ en $T$ es un camino de costo m\'inimo de $s$ a $v$ en $G$ .
+    \end{itemize}
+
+    \noindent Dise\~ne un algoritmo que encuentre en el grafo G un \'arbol T de caminos de costo m\'inimo con ra\'iz en s tal que
+    la suma de los pesos de las aristas de T sea lo menor posible. La complejidad temporal del algoritmo debe ser
+    $O(|E|log|V|)$.
+
+
+    \section{ Explicaci\'on de la soluci\'on }
+
+    \noindent La soluci\'on al problema es aplicar el algoritmo de  Dijkstra visto en conferencias.
+    Teniendo en cuenta el array $\pi$ para obtener el \'arbol abarcador con ra\'iz  en $s$.
+    Esta es la idea general del algoritmo. Solo que tenemos que demostrar que el \'arbol que 
+    nos retona el algoritmo es el \'arbol que buscamos  , un arbol $T$ de caminos de costo m\'inimos, 
+    con ra\'iz en $s$ tal que la suma de los pesos de las aristas es la menor posible    
+
+    \section{Seudoc\'odigo del Algoritmo }
+
+    
+
+    \section{Complejidad temporal }
+
+    \section{Demostraci\'on  de la correctitud del algoritmo}
+
+
+
+
+\end{document}
